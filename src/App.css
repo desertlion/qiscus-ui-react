@@ -1,5 +1,11 @@
-.App {
-  text-align: center;
+body {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+#qiscus-widget {
+  background:#FFF;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 17px rgba(0,0,0,.35);
 }
 
 .App-logo {
@@ -15,7 +21,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +40,76 @@
   to {
     transform: rotate(360deg);
   }
+}
+.loader-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.loader {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top: 5px solid rgba(0,0,0,.35);
+  animation: App-logo-spin infinite 5s linear;
+}
+.qcw-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul.qcw-rooms-list li:hover {
+  background: rgba(0,0,0,.05);
+}
+
+ul.qcw-rooms-list li {
+  border-top: 1px dotted #ddd;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+ul.qcw-rooms-list {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  list-style: none;
+  flex: 1;
+}
+.qcw-rooms h3 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+.qcw-rooms {
+  display: flex;
+  flex-direction: column;
+  width: 100%; height: 100%;
+}
+.qcw-comments h3 span {
+  width: 30px;
+  cursor: pointer;
+}
+
+.qcw-comments h3 {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+.qcw-comments h3 span + div {
+  flex: 1;
+}
+.qcw-comments {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.qcw-comments .loader-container {
+  width: 50px; height: 50px;
 }
